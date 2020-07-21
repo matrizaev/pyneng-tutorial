@@ -19,3 +19,7 @@
 """
 
 ip = "192.168.3.1"
+
+parts = ip.split('.')
+
+print("{oct1:<8} {oct2:<8} {oct3:<8} {oct4:<8}\n{oct1:<08b} {oct2:<08b} {oct3:<08b} {oct4:<08b}".format(oct1=int(parts[0]), oct2=int(parts[1]), oct3=int(parts[2]), oct4=int(parts[3])))

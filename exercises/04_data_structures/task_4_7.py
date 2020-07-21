@@ -10,3 +10,8 @@
 """
 
 mac = "AAAA:BBBB:CCCC"
+
+parts = mac.split(':')
+
+
+print("{:08b}{:08b}{:08b}".format(int(parts[1], 16), int(parts[1], 16), int(parts[1], 16)))
